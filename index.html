@@ -8,43 +8,47 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1' y='7' width='30' height='18' rx='9' fill='%239c6634'/%3E%3Ccircle cx='10' cy='16' r='4' fill='%23e9c46a'/%3E%3Ccircle cx='17' cy='16' r='4' fill='%232a9d8f'/%3E%3Ccircle cx='24' cy='16' r='4' fill='%23e76f51'/%3E%3C/svg%3E">
 <style>
 :root{
-  --bg:#f4efe6; --surface:#fffcf6; --surface-2:#f6efe3; --text:#2b2219; --muted:#76675a; --line:#e4d9c8;
-  --wood-1:#c38d55; --wood-2:#9a6434; --pit:#55331a; --pit-hi:#7a4c26; --store:#4a2c14; --on-wood:#fbefdc;
+  --bg:#f3eee6; --surface:#fffcf7; --surface-2:#f5eee3; --text:#2a2119; --muted:#74665a; --line:#e3d8c7;
+  --wood-1:#c99158; --wood-2:#9b6433; --rim:#7d4d24; --pit:#4f2f16; --pit-hi:#764923; --store:#46290f; --on-wood:#fff4e2;
+  --pa:#2f7df0; --pb:#9b51e0; --gold:#ffc940; --capc:#ff5a4f; --bestc:#3fdc93; --oddc:#ffa53a;
   --accent:#2f6f4f; --accent-text:#ffffff;
   --good:#2b7a52; --good-soft:#e1f1e7; --ok:#5b7f22; --ok-soft:#edf3dd;
   --warn:#a8670f; --warn-soft:#fbeed6; --bad:#b4412f; --bad-soft:#f8e0db; --info-soft:#efe8dc;
-  --ring:#ffd76a; --shadow:0 1px 2px rgba(60,40,20,.08),0 10px 30px rgba(60,40,20,.10);
+  --shadow:0 1px 2px rgba(60,40,20,.08),0 12px 32px rgba(60,40,20,.10);
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#15110d; --surface:#201a14; --surface-2:#2a2219; --text:#f2e9dd; --muted:#b3a392; --line:#3a3027;
-    --wood-1:#9b6a3b; --wood-2:#6c431f; --pit:#331f0d; --pit-hi:#4b2e15; --store:#2b190a; --on-wood:#fbefdc;
+    --bg:#14110d; --surface:#1f1913; --surface-2:#292119; --text:#f2e9dd; --muted:#b3a392; --line:#3a3027;
+    --wood-1:#9c6a3a; --wood-2:#6a421e; --rim:#4f2f12; --pit:#2f1b0b; --pit-hi:#4a2d14; --store:#28170a; --on-wood:#fff4e2;
+    --pa:#5b9bff; --pb:#b67cf0;
     --accent:#5bbf8c; --accent-text:#0f1a14;
     --good:#6fd29c; --good-soft:rgba(111,210,156,.14); --ok:#b3d67a; --ok-soft:rgba(179,214,122,.14);
     --warn:#f0b65a; --warn-soft:rgba(240,182,90,.14); --bad:#f08776; --bad-soft:rgba(240,135,118,.15); --info-soft:rgba(255,255,255,.06);
-    --ring:#ffd76a; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.35);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#15110d; --surface:#201a14; --surface-2:#2a2219; --text:#f2e9dd; --muted:#b3a392; --line:#3a3027;
-  --wood-1:#9b6a3b; --wood-2:#6c431f; --pit:#331f0d; --pit-hi:#4b2e15; --store:#2b190a; --on-wood:#fbefdc;
+  --bg:#14110d; --surface:#1f1913; --surface-2:#292119; --text:#f2e9dd; --muted:#b3a392; --line:#3a3027;
+  --wood-1:#9c6a3a; --wood-2:#6a421e; --rim:#4f2f12; --pit:#2f1b0b; --pit-hi:#4a2d14; --store:#28170a; --on-wood:#fff4e2;
+  --pa:#5b9bff; --pb:#b67cf0;
   --accent:#5bbf8c; --accent-text:#0f1a14;
   --good:#6fd29c; --good-soft:rgba(111,210,156,.14); --ok:#b3d67a; --ok-soft:rgba(179,214,122,.14);
   --warn:#f0b65a; --warn-soft:rgba(240,182,90,.14); --bad:#f08776; --bad-soft:rgba(240,135,118,.15); --info-soft:rgba(255,255,255,.06);
-  --ring:#ffd76a; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.35);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1040px;margin:0 auto;padding:24px 16px 56px}
-header h1{font-size:1.65rem;line-height:1.2;margin:0 0 4px;letter-spacing:-.01em}
-header p{margin:0;color:var(--muted);max-width:62ch}
+.wrap{max-width:1060px;margin:0 auto;padding:24px 16px 56px}
+header h1{font-size:1.7rem;line-height:1.2;margin:0 0 4px;letter-spacing:-.01em}
+header p{margin:0;color:var(--muted);max-width:66ch}
 h2{font-size:1.02rem;margin:0 0 2px}
 .sub{color:var(--muted);font-size:13px;margin:0 0 12px}
 
+/* ---- ayarlar ---- */
 .controls{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:flex-end;margin:18px 0 16px}
 .ctl{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
 select{font:inherit;font-size:14px;padding:7px 28px 7px 10px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);min-height:38px}
@@ -53,62 +57,128 @@ select{font:inherit;font-size:14px;padding:7px 28px 7px 10px;border-radius:10px;
 .btn.primary{background:var(--accent);color:var(--accent-text);border-color:transparent}
 .btn.primary:hover{filter:brightness(1.06)}
 .btn:disabled{opacity:.45;cursor:default}
+.btn.small{font-size:13px;padding:5px 11px;min-height:32px}
 .check{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--text);min-height:38px;padding:0 4px;cursor:pointer}
 .check input{width:18px;height:18px;accent-color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 
 .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-.board-card{padding:14px 14px 12px}
-.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 4px 12px;flex-wrap:wrap}
-#status{font-weight:650;font-size:15px}
-#status.thinking::after{content:"";display:inline-block;width:8px;height:8px;margin-left:8px;border-radius:50%;background:var(--warn);animation:blink 1s infinite}
-@keyframes blink{50%{opacity:.2}}
-.score{font-size:13px;color:var(--muted)}
-.score b{color:var(--text);font-size:15px}
 
-.board{--dot:clamp(5px,1.25vw,11px);display:grid;grid-template-columns:minmax(46px,.85fr) minmax(0,6fr) minmax(46px,.85fr);gap:6px 12px;
-  max-width:860px;margin:0 auto;padding:12px 16px;border-radius:30px;
-  background:linear-gradient(160deg,var(--wood-1),var(--wood-2));box-shadow:inset 0 2px 0 rgba(255,255,255,.18),inset 0 -3px 0 rgba(0,0,0,.18),0 6px 18px rgba(60,30,10,.25)}
-.labs,.row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+/* ---- tahta kartı ---- */
+.board-card{position:relative;padding:14px 14px 12px}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 2px 10px;flex-wrap:wrap}
+.turn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15px;padding:6px 14px 6px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+.turn .tdot{width:12px;height:12px;border-radius:50%;background:var(--muted)}
+.turn.pa .tdot{background:var(--pa)} .turn.pb .tdot{background:var(--pb)}
+.turn.pa{border-color:color-mix(in srgb,var(--pa) 45%,var(--line))}
+.turn.pb{border-color:color-mix(in srgb,var(--pb) 45%,var(--line))}
+.turn.thinking .tdot{animation:blink .9s infinite}
+@keyframes blink{50%{opacity:.25}}
+.score{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.score b{color:var(--text);font-size:18px;font-variant-numeric:tabular-nums}
+.chip{display:inline-flex;align-items:center;gap:6px}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.chip i.pa{background:var(--pa)} .chip i.pb{background:var(--pb)}
+
+.banner{display:flex;align-items:center;gap:12px;min-height:52px;margin:0 0 12px;padding:9px 12px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);border-left:5px solid var(--muted);font-size:15px;line-height:1.4}
+.banner.pa{border-left-color:var(--pa)} .banner.pb{border-left-color:var(--pb)}
+.banner{flex-wrap:wrap}
+.banner .btxt{flex:1 1 260px}
+.banner .btxt b{font-weight:750}
+.banner.flash{animation:bflash .5s ease-out}
+@keyframes bflash{0%{background:color-mix(in srgb,var(--gold) 35%,var(--surface-2))}}
+
+.board{display:grid;grid-template-columns:minmax(70px,.9fr) minmax(0,6fr) minmax(70px,.9fr);gap:4px 12px;
+  max-width:880px;margin:0 auto;padding:12px 16px;border-radius:32px;border:6px solid var(--rim);
+  background:
+    repeating-linear-gradient(92deg,rgba(255,255,255,.045) 0 3px,rgba(0,0,0,.035) 3px 9px,rgba(255,255,255,0) 9px 17px),
+    linear-gradient(165deg,var(--wood-1),var(--wood-2));
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.2),inset 0 -4px 0 rgba(0,0,0,.18),0 10px 24px rgba(60,30,10,.28)}
+.labs,.row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding:0 6px}
+.row{padding:6px;border-radius:999px;transition:background .35s,box-shadow .35s}
+.row.act-a{background:color-mix(in srgb,var(--pa) 20%,transparent);box-shadow:0 0 0 2px color-mix(in srgb,var(--pa) 60%,transparent)}
+.row.act-b{background:color-mix(in srgb,var(--pb) 22%,transparent);box-shadow:0 0 0 2px color-mix(in srgb,var(--pb) 60%,transparent)}
 .labs{grid-column:2}
 .labs.top{grid-row:1}.row.top{grid-column:2;grid-row:2}.row.bot{grid-column:2;grid-row:3}.labs.bot{grid-row:4}
-.store{grid-row:2/4;border-radius:999px;background:radial-gradient(ellipse at 50% 30%,var(--pit-hi),var(--store) 75%);
-  box-shadow:inset 0 5px 14px rgba(0,0,0,.5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 4px;position:relative;transition:box-shadow .2s}
+
+.store{grid-row:2/4;border-radius:999px;background:radial-gradient(ellipse at 50% 30%,var(--pit-hi),var(--store) 75%);container-type:inline-size;
+  box-shadow:inset 0 6px 16px rgba(0,0,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:6px;padding:14px 4px;position:relative;transition:box-shadow .25s}
 .store.b{grid-column:1}.store.a{grid-column:3}
-.store .num{font-size:1.7rem;font-weight:800;color:#fff;line-height:1}
-.store .who{font-size:11px;color:var(--on-wood);opacity:.85;text-align:center;line-height:1.2}
-.store .dots{width:70%;max-height:48%;overflow:hidden}
-.store.active{box-shadow:inset 0 5px 14px rgba(0,0,0,.5),0 0 0 3px var(--ring)}
-.pit{position:relative;aspect-ratio:1;width:100%;border-radius:50%;border:0;padding:0;margin:0;cursor:default;
-  background:radial-gradient(circle at 50% 38%,var(--pit-hi),var(--pit) 72%);box-shadow:inset 0 5px 12px rgba(0,0,0,.5);
-  display:grid;place-items:center;color:inherit;font:inherit;transition:transform .12s}
+.store .who{font-size:clamp(8.5px,13cqi,12px);font-weight:700;color:#fff;padding:1px 4px;letter-spacing:-.1px;border-radius:999px;text-align:center;line-height:1.5;white-space:nowrap;max-width:96%;overflow:hidden;text-overflow:ellipsis}
+.store.a .who{background:var(--pa)} .store.b .who{background:var(--pb)}
+.store .num{font-size:1.75rem;font-weight:800;color:#fff;line-height:1;font-variant-numeric:tabular-nums}
+.store .stones{width:84%;flex:1;align-content:start}
+.store.active.a{box-shadow:inset 0 6px 16px rgba(0,0,0,.55),0 0 0 3px var(--pa)}
+.store.active.b{box-shadow:inset 0 6px 16px rgba(0,0,0,.55),0 0 0 3px var(--pb)}
+.store.glow{box-shadow:inset 0 6px 16px rgba(0,0,0,.55),0 0 0 4px var(--gold),0 0 22px var(--gold)!important}
+
+.pit{position:relative;aspect-ratio:1;width:100%;border-radius:50%;border:0;padding:0;margin:0;cursor:default;container-type:inline-size;
+  background:radial-gradient(circle at 50% 38%,var(--pit-hi),var(--pit) 72%);box-shadow:inset 0 6px 14px rgba(0,0,0,.55);
+  display:grid;place-items:center;color:inherit;font:inherit;transition:transform .12s,box-shadow .2s}
 .pit.playable{cursor:pointer}
 .pit.playable:hover{transform:translateY(-2px)}
-.pit.playable::before{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(255,240,210,.35)}
-.pit.best::before{inset:-6px;border:3px solid #7fe0a8}
-.pit.land::after,.store.land::after{content:"";position:absolute;inset:-7px;border-radius:inherit;border:3px dashed var(--ring)}
-.pit.flash{animation:pop .22s ease-out}
-@keyframes pop{40%{transform:scale(1.08)}}
-.pit.cap,.store.cap{box-shadow:inset 0 5px 12px rgba(0,0,0,.5),0 0 0 4px #ff8a73}
-.pit.src{box-shadow:inset 0 5px 12px rgba(0,0,0,.5),0 0 0 3px rgba(255,255,255,.5)}
-.dots{display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:2px;width:68%;pointer-events:none}
-.dot{width:var(--dot);height:var(--dot);border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.75) 0 16%,var(--c) 48%);box-shadow:0 1px 1px rgba(0,0,0,.45)}
-.count{position:absolute;right:-3px;bottom:-3px;min-width:24px;height:24px;padding:0 6px;border-radius:12px;background:var(--surface);color:var(--text);
-  font-weight:750;font-size:12.5px;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.35);pointer-events:none}
-.count.zero{opacity:.55}
+.pit.playable::before{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(255,244,226,.35);pointer-events:none}
+.pit.best::before{inset:-6px;border:3px solid var(--bestc)}
+.pit.land::after,.store.land::after{content:"";position:absolute;inset:-7px;border-radius:inherit;border:3px dashed #fff;opacity:.9;pointer-events:none}
+.pit[data-pick="a"]{box-shadow:inset 0 6px 14px rgba(0,0,0,.55),0 0 0 4px var(--pa),0 0 18px var(--pa);animation:pulse .7s ease-in-out infinite}
+.pit[data-pick="b"]{box-shadow:inset 0 6px 14px rgba(0,0,0,.55),0 0 0 4px var(--pb),0 0 18px var(--pb);animation:pulse .7s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}
+.pit[data-from="a"]{box-shadow:inset 0 6px 14px rgba(0,0,0,.55),0 0 0 3px color-mix(in srgb,var(--pa) 80%,transparent)}
+.pit[data-from="b"]{box-shadow:inset 0 6px 14px rgba(0,0,0,.55),0 0 0 3px color-mix(in srgb,var(--pb) 80%,transparent)}
+.pit.cap,.store.cap{box-shadow:inset 0 6px 14px rgba(0,0,0,.55),0 0 0 4px var(--capc),0 0 20px var(--capc)!important;animation:pulse .5s ease-in-out infinite}
+.pit .mark{position:absolute;left:-3px;top:-3px;width:15px;height:15px;border-radius:50%;border:2px solid #fff;display:none;box-shadow:0 1px 3px rgba(0,0,0,.45);pointer-events:none}
+.pit[data-to="a"] .mark{display:block;background:var(--pa)}
+.pit[data-to="b"] .mark{display:block;background:var(--pb)}
+
+/* taşlar: çift çift */
+.stones{display:grid;grid-template-columns:repeat(var(--cols,2),auto);gap:4cqi 5cqi;justify-content:center;align-content:center;justify-items:start;width:86%;max-height:84%;overflow:hidden;pointer-events:none}
+.pair{display:flex;gap:1cqi;padding:1.4cqi 1.8cqi;border-radius:999px;background:rgba(255,236,205,.2);box-shadow:inset 0 0 0 1px rgba(255,236,205,.28)}
+.pair.single{background:rgba(255,165,58,.12);box-shadow:inset 0 0 0 1.6px var(--oddc)}
+.st{width:var(--s,11cqi);height:var(--s,11cqi);border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.9) 0 13%,var(--c) 45%,color-mix(in srgb,var(--c) 62%,#000) 100%);
+  box-shadow:0 1px 1.5px rgba(0,0,0,.55)}
+.st.new{animation:drop .38s cubic-bezier(.3,1.5,.5,1)}
+@keyframes drop{0%{transform:translateY(-120%) scale(.4);opacity:0}100%{transform:none;opacity:1}}
+.count{position:absolute;right:-4px;bottom:-4px;min-width:25px;height:25px;padding:0 6px;border-radius:13px;background:var(--surface);color:var(--text);
+  font-weight:800;font-size:13px;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.4);pointer-events:none;font-variant-numeric:tabular-nums}
+.count.odd{box-shadow:0 0 0 2px var(--oddc),0 1px 3px rgba(0,0,0,.4)}
+.count.zero{opacity:.5}
+.count.bump{animation:bump .3s ease-out}
+@keyframes bump{40%{transform:scale(1.3)}}
+
 .lab{text-align:center;color:var(--on-wood);font-size:12px;line-height:1.25;min-height:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
 .labs.top .lab{flex-direction:column-reverse}
-.lab .no{font-weight:700;opacity:.9}
-.hv{font-size:11px;font-weight:700;padding:0 7px;border-radius:999px;background:rgba(0,0,0,.28);color:#fff;white-space:nowrap}
-.hv.best{background:#2b7a52}.hv.ok{background:#5b7f22}.hv.warn{background:#a8670f}.hv.bad{background:#b4412f}
-#preview{min-height:22px;margin:10px 4px 0;font-size:13.5px;color:var(--muted);text-align:center}
+.lab .no{font-weight:700;opacity:.92}
+.hv{font-size:11px;font-weight:700;padding:0 7px;border-radius:999px;background:rgba(0,0,0,.3);color:#fff;white-space:nowrap}
+.hv.best{background:#23804f}.hv.ok{background:#5b7f22}.hv.warn{background:#a8670f}.hv.bad{background:#b4412f}
 
+/* efekt katmanı */
+#fx{position:absolute;inset:0;pointer-events:none;overflow:visible;z-index:5}
+.hand{position:absolute;left:0;top:0;width:38px;height:38px;margin:-19px 0 0 -19px;border-radius:50%;color:#fff;font-weight:800;font-size:16px;
+  display:grid;place-items:center;border:3px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.4);transition-property:transform;transition-timing-function:cubic-bezier(.3,.75,.3,1)}
+.hand.pa{background:var(--pa)} .hand.pb{background:var(--pb)}
+.fly{position:absolute;left:0;top:0;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.9) 0 13%,var(--c) 45%,color-mix(in srgb,var(--c) 62%,#000) 100%);
+  box-shadow:0 2px 4px rgba(0,0,0,.45);transition:transform .62s cubic-bezier(.55,0,.3,1)}
+.floater{position:absolute;transform:translate(-50%,-50%);font-weight:800;font-size:14px;color:#fff;padding:3px 11px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);animation:rise 1.5s ease-out forwards}
+.floater.pa{background:var(--pa)} .floater.pb{background:var(--pb)} .floater.cap{background:var(--capc)} .floater.neu{background:rgba(30,20,10,.82)} .floater.gold{background:#d99a00}
+@keyframes rise{0%{opacity:0;transform:translate(-50%,-20%) scale(.8)}12%{opacity:1;transform:translate(-50%,-50%) scale(1)}75%{opacity:1;transform:translate(-50%,-70%)}100%{opacity:0;transform:translate(-50%,-115%)}}
+
+#preview{min-height:22px;margin:10px 4px 2px;font-size:13.5px;color:var(--muted);text-align:center}
+.legend{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;font-size:12.5px;color:var(--muted);margin:6px 0 2px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.lg-pair,.lg-single{display:inline-flex;gap:2px;padding:2px 3px;border-radius:999px;background:#5a3519}
+.lg-single{background:#5a3519;box-shadow:inset 0 0 0 1.5px var(--oddc)}
+.lg-pair i,.lg-single i{width:9px;height:9px;border-radius:50%;background:#e9c46a}
+.lg-badge{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:10px;background:var(--surface);color:var(--text);font-weight:800;font-size:11px;box-shadow:0 0 0 2px var(--oddc)}
+
+/* paneller */
 .panels{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin-top:16px;align-items:start}
 .stack{display:grid;gap:16px}
 .mv{display:grid;grid-template-columns:92px 1fr 74px;gap:6px 12px;align-items:center;width:100%;text-align:left;padding:9px 10px;margin:0;border-radius:12px;border:1px solid transparent;background:none;color:inherit;font:inherit;cursor:pointer}
 .mv:hover{background:var(--surface-2)}
 .mv.is-best{border-color:color-mix(in srgb,var(--good) 45%,transparent);background:var(--good-soft)}
-.mv:disabled{cursor:default}
 .mv .pn b{display:block}
 .mv .pn span{font-size:12px;color:var(--muted)}
 .bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden}
@@ -136,6 +206,8 @@ select{font:inherit;font-size:14px;padding:7px 28px 7px 10px;border-radius:10px;
 #log li{display:flex;gap:8px;align-items:baseline;padding:6px 2px;border-bottom:1px solid var(--line)}
 #log li:last-child{border-bottom:0}
 #log .n{color:var(--muted);font-variant-numeric:tabular-nums;min-width:22px}
+#log .d{width:9px;height:9px;border-radius:50%;flex:none;align-self:center}
+#log .d.pa{background:var(--pa)} #log .d.pb{background:var(--pb)}
 #log .who{font-weight:700}
 #log .txt{flex:1}
 #log .lv{font-weight:700;font-size:12px;white-space:nowrap}
@@ -146,24 +218,28 @@ details summary{cursor:pointer;font-weight:700;font-size:1.02rem}
 .tips li{margin:0 0 8px}
 .note{font-size:13px;color:var(--muted);margin-top:10px}
 table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
-th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-size:12px;color:var(--muted);font-weight:600}
 @media (max-width:820px){.panels{grid-template-columns:1fr}}
 @media (max-width:560px){
   .wrap{padding:16px 16px 40px}
   header h1{font-size:1.35rem}
-  .board{gap:4px 6px;padding:8px 8px;border-radius:20px;grid-template-columns:minmax(38px,.8fr) minmax(0,6fr) minmax(38px,.8fr)}
-  .labs,.row{gap:6px}
-  .count{min-width:19px;height:19px;font-size:11px;padding:0 4px;right:-4px;bottom:-4px}
+  .board{gap:3px 6px;padding:8px 6px;border-radius:22px;border-width:4px;grid-template-columns:minmax(40px,.8fr) minmax(0,6fr) minmax(40px,.8fr)}
+  .labs,.row{gap:5px}
+  .row{padding:3px}
+  .count{min-width:19px;height:19px;font-size:11px;padding:0 4px;right:-5px;bottom:-5px}
   .store .num{font-size:1.2rem}
-  .store .who{font-size:10px}
+  .store .who{font-size:9.5px;padding:0 5px}
   .hv{font-size:10px;padding:0 5px}
   .lab{font-size:11px;min-height:28px}
+  .hand{width:28px;height:28px;margin:-14px 0 0 -14px;font-size:13px;border-width:2px}
+  .floater{font-size:12px;padding:2px 8px}
+  .banner{font-size:14px}
   .mv{grid-template-columns:78px 1fr 60px;gap:6px 8px}
   .controls .ctl{flex:1 1 140px}
   .controls select{width:100%}
 }
-@media (prefers-reduced-motion:reduce){.pit,.pit.flash{animation:none;transition:none}}
+@media (prefers-reduced-motion:reduce){.pit,.st.new,.count.bump,.pit[data-pick],.pit.cap{animation:none!important;transition:none}}
 </style>
 </head>
 <body>
@@ -193,8 +269,9 @@ th{font-size:12px;color:var(--muted);font-weight:600}
         <option value="zor">Zor (tam güç)</option>
       </select>
     </label>
-    <label class="ctl">Animasyon
+    <label class="ctl">Animasyon hızı
       <select id="setAnim">
+        <option value="yavas">Yavaş</option>
         <option value="normal">Normal</option>
         <option value="hizli">Hızlı</option>
         <option value="kapali">Kapalı</option>
@@ -213,18 +290,29 @@ th{font-size:12px;color:var(--muted);font-weight:600}
 
   <section class="card board-card" aria-label="Oyun tahtası">
     <div class="topline">
-      <div id="status" role="status" aria-live="polite"></div>
+      <div class="turn" id="turn"><span class="tdot"></span><span id="status" role="status" aria-live="polite"></span></div>
       <div class="score" id="score"></div>
+    </div>
+    <div class="banner" id="banner">
+      <span class="btxt" id="btxt" aria-live="polite"></span>
+      <button class="btn small" id="btnReplay" type="button" hidden>Bilgisayarın hamlesini tekrar izle</button>
     </div>
     <div class="board" id="board">
       <div class="labs top" id="labTop"></div>
-      <div class="store b" id="p13"><span class="who" id="whoB">Bilgisayar</span><span class="num"></span><div class="dots"></div></div>
+      <div class="store b" id="p13"><span class="who" id="whoB">Bilgisayar</span><span class="num"></span><div class="stones"></div></div>
       <div class="row top" id="rowTop"></div>
       <div class="row bot" id="rowBot"></div>
-      <div class="store a" id="p6"><span class="who" id="whoA">Sen</span><span class="num"></span><div class="dots"></div></div>
+      <div class="store a" id="p6"><span class="who" id="whoA">Sen</span><span class="num"></span><div class="stones"></div></div>
       <div class="labs bot" id="labBot"></div>
     </div>
     <div id="preview"></div>
+    <div class="legend">
+      <span><i class="lg-pair"><i></i><i></i></i> 1 çift = 2 taş</span>
+      <span><i class="lg-single"><i></i></i><b class="lg-badge">5</b> turuncu = çiftsiz taş var, sayı tek</span>
+      <span class="chip"><i class="pa"></i>Sen</span>
+      <span class="chip"><i class="pb"></i><span id="lgB">Bilgisayar</span></span>
+    </div>
+    <div id="fx" aria-hidden="true"></div>
   </section>
 
   <div class="panels">
@@ -251,7 +339,7 @@ th{font-size:12px;color:var(--muted);font-weight:600}
       <li><b>Hızlı hesap:</b> Kuyudaki taş sayısı = hazineye uzaklık + 1 ise son taş hazineye düşer, tekrar oynarsın. (6. kuyu hazineye 1, 5. kuyu 2, 4. kuyu 3 uzaklıkta.) Kuyuda tek taş varsa yan kuyuya geçer: 6. kuyudaki tek taş da hazineye gider.</li>
       <li><b>Birden çok kuyu ekstra hamle veriyorsa</b> önce hazineye <b>en yakın</b> olanı oyna. Uzaktakini önce oynarsan yakındakine taş ekler, sayısını bozar.</li>
       <li><b>Ekstra hamle her zaman bedava değil.</b> Tekrar oynamak güzel ama geride bıraktığın tahtaya bak. Antrenörde bunun örneklerini göreceksin.</li>
-      <li><b>Çift kuralı:</b> Rakibin <b>tek sayılı</b> kuyuları hedefin. Son taşın oraya düşerse çift olur, hepsini alırsın. Kendi tarafında büyük ve tek sayılı kuyu bırakma.</li>
+      <li><b>Çift kuralı:</b> Rakibin <b>tek sayılı</b> kuyuları hedefin (tahtada turuncu çerçeveli rozetler). Son taşın oraya düşerse çift olur, hepsini alırsın. Kendi tarafında büyük ve tek sayılı kuyu bırakma.</li>
       <li><b>Boş kuyu kuralı:</b> Son taşın kendi boş kuyuna düşerse karşısındaki kuyuyu da alırsın. Rakibin boş kuyusunun karşısında büyük yığın tutma.</li>
       <li><b>Oyun sonu:</b> Kendi tarafındaki taşları ilk biten oyuncu, rakibin tarafındaki bütün taşları alır. Sonlara doğru kendi tarafında taş biriktirmek tehlikeli. Rakibin tarafı doluysa sen kendi tarafını hızlıca boşalt. 48 taşın 25'ini alan kazanır.</li>
       <li><b>Her hamleden önce 3 soru sor:</b> Ekstra hamlem var mı? Bir şey alabiliyor muyum? Bu hamleden sonra rakip benim neyimi alır?</li>
@@ -376,8 +464,14 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   'use strict';
   var START = [4,4,4,4,4,4,0,4,4,4,4,4,4,0];
   var HINT_MS = 1000;
-  var ANIM = { normal: 150, hizli: 55, kapali: 0 };
-  var COLORS = ['#e9c46a','#e76f51','#2a9d8f','#8ab17d','#f4a261','#9ecbe0','#cdb4db'];
+  // Animasyon süreleri (ms): pick = kuyuyu seçme vurgusu, move = elin bir kuyudan diğerine gidişi, drop = taşı bırakma, result = sonucu okuma payı
+  var SPEEDS = {
+    yavas:  { ai: { pick: 1150, move: 340, drop: 150, result: 1500 }, hu: { pick: 160, move: 230, drop: 90, result: 950 } },
+    normal: { ai: { pick: 850,  move: 250, drop: 110, result: 1100 }, hu: { pick: 120, move: 165, drop: 60, result: 700 } },
+    hizli:  { ai: { pick: 380,  move: 115, drop: 50,  result: 500 },  hu: { pick: 60,  move: 85,  drop: 30, result: 320 } },
+    kapali: null
+  };
+  var COLORS = ['#f2c14e','#e9674a','#2fa597','#8cc06b','#f59f4c','#7fb8de','#c9a6e4'];
   var LEVELS = {
     kolay: { timeMs: 150, maxDepth: 2, pick: function (vals) { var best = maxV(vals); var pool = vals.filter(function (x) { return x.v >= best - 4; }); return Math.random() < 0.25 ? rand(vals).pit : rand(pool).pit; } },
     orta:  { timeMs: 350, maxDepth: 6, pick: function (vals) { var best = maxV(vals); return rand(vals.filter(function (x) { return x.v >= best - 1; })).pit; } },
@@ -386,10 +480,11 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
 
   // ---- ayarlar (tarayıcıda hatırlanır) ----
   var DEFAULTS = { mode: 'ai', starter: 'human', level: 'zor', anim: 'normal', rule: 'meb', hints: true };
-  function loadSet() { var s = Object.assign({}, DEFAULTS); try { var raw = localStorage.getItem('mangala-antrenor'); if (raw) Object.assign(s, JSON.parse(raw)); } catch (e) {} return s; }
+  function loadSet() { var s = Object.assign({}, DEFAULTS); try { var raw = localStorage.getItem('mangala-antrenor'); if (raw) Object.assign(s, JSON.parse(raw)); } catch (e) {} if (!(s.anim in SPEEDS)) s.anim = 'normal'; return s; }
   function saveSet() { try { localStorage.setItem('mangala-antrenor', JSON.stringify(S.set)); } catch (e) {} }
 
-  var S = { set: loadSet(), b: START.slice(), turn: 0, over: false, busy: false, gen: 0, history: [], log: [], stats: null, feedback: null, ana: null, reveal: null, preview: null };
+  var S = { set: loadSet(), b: START.slice(), turn: 0, over: false, busy: false, replaying: false, gen: 0, history: [], log: [], stats: null, feedback: null,
+            ana: null, reveal: null, preview: null, trail: null, aiRec: null, lastAi: null, banner: { html: '', side: -1 } };
 
   // ---- yardımcılar ----
   function $(id) { return document.getElementById(id); }
@@ -398,13 +493,51 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   function maxV(vals) { var m = -1e9; vals.forEach(function (x) { if (x.v > m) m = x.v; }); return m; }
   function pitNo(i) { return i <= 5 ? i + 1 : i - 6; }
   function sideOf(i) { return i <= 5 ? 0 : (i >= 7 && i <= 12 ? 1 : -1); }
+  function storeOf(p) { return p === 0 ? 6 : 13; }
   function posKey() { return S.b.join(',') + '|' + S.turn + '|' + S.set.rule; }
-  function who(p) { return S.set.mode === 'ai' ? (p === 0 ? 'Sen' : 'Bilgisayar') : (p === 0 ? 'Alt' : 'Üst'); }
-  function humanControls(p) { return S.set.mode === 'analysis' || p === 0; }
+  function isAI() { return S.set.mode === 'ai'; }
+  function who(p) { return isAI() ? (p === 0 ? 'Sen' : 'Bilgisayar') : (p === 0 ? 'Alt' : 'Üst'); }
+  function cls(p) { return p === 0 ? 'pa' : 'pb'; }
+  function humanControls(p) { return !isAI() || p === 0; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function gradeOf(loss) { return loss <= 0 ? 'best' : loss <= 2 ? 'ok' : loss <= 5 ? 'warn' : 'bad'; }
   var GRADE_NAME = { best: 'En iyi hamle', ok: 'İyi hamle', warn: 'Kusurlu', bad: 'Hata' };
   function freshStats() { return { n: 0, best: 0, loss: 0, worst: null }; }
+
+  // ---- anlatım (kimin kuyusu olduğu her zaman açıkça yazılır) ----
+  var KASE = { dat: ['kuyuna', 'kuyusuna'], loc: ['kuyundaki', 'kuyusundaki'] };
+  function pitPhrase(idx, kase) {
+    var n = pitNo(idx), side = sideOf(idx);
+    if (isAI() && side === 0) return 'senin ' + n + '. ' + KASE[kase][0];
+    var owner = isAI() ? 'bilgisayarın' : (side === 0 ? 'alt oyuncunun' : 'üst oyuncunun');
+    return owner + ' ' + n + '. ' + KASE[kase][1];
+  }
+  function storePhrase(p) { return isAI() ? (p === 0 ? 'hazinene' : 'bilgisayarın hazinesine') : (p === 0 ? 'alt oyuncunun' : 'üst oyuncunun') + ' hazinesine'; }
+  function subjLower(p) { return isAI() ? 'bilgisayar' : (p === 0 ? 'alt oyuncu' : 'üst oyuncu'); }
+  function took(p, amt) { return isAI() && p === 0 ? amt + ' taş aldın' : subjLower(p) + ' ' + amt + ' taş aldı'; }
+  function againTxt(p) { return isAI() && p === 0 ? 'tekrar oynuyorsun' : subjLower(p) + ' tekrar oynuyor'; }
+  function narratePick(p, i, n) {
+    if (isAI() && p === 0) return '<b>' + pitNo(i) + '. kuyunu</b> oynadın: ' + n + ' taş dağıtılıyor';
+    return (isAI() ? 'Bilgisayar' : (p === 0 ? 'Alt oyuncu' : 'Üst oyuncu')) + ' <b>' + pitNo(i) + '. kuyusunu</b> oynuyor: ' + n + ' taş dağıtılıyor';
+  }
+  function narrateResult(p, i, r) {
+    var head = (isAI() && p === 0) ? pitNo(i) + '. kuyun: ' : (isAI() ? 'Bilgisayar' : (p === 0 ? 'Alt' : 'Üst')) + ' ' + pitNo(i) + '. kuyu: ';
+    var t, L = r.last;
+    if (r.extra) t = 'son taş ' + storePhrase(p) + ' düştü → <b>' + againTxt(p) + '</b>';
+    else if (r.cap && r.cap.type === 'even') t = 'son taş ' + pitPhrase(L, 'dat') + ' düştü, ' + r.cap.amount + ' taş oldu (çift) → <b>' + took(p, r.cap.amount) + '</b>';
+    else if (r.cap) t = 'son taş ' + pitPhrase(L, 'dat') + ' düştü, kuyu boştu → karşıdaki ' + pitPhrase(r.cap.pits[1], 'loc') + ' ' + (r.cap.amount - 1) + ' taşla birlikte <b>' + took(p, r.cap.amount) + '</b>';
+    else if (sideOf(L) !== p && !r.over) t = 'son taş ' + pitPhrase(L, 'dat') + ' düştü: ' + r.b[L] + ' taş, tek sayı → alınmadı';
+    else t = 'son taş ' + pitPhrase(L, 'dat') + ' düştü';
+    if (r.over && r.sweep) {
+      if (r.sweep.type === 'meb') t += '. <b>Oyun bitti</b>' + (r.sweep.amount > 0 ? ': taşları ilk biten taraf olarak ' + took(r.sweep.to, r.sweep.amount) + ' (rakipte kalanlar)' : '');
+      else t += '. <b>Oyun bitti</b>: herkes kendi tarafındaki taşları aldı';
+    }
+    return head + t;
+  }
+  function setBanner(html, side, flash) {
+    S.banner = { html: html, side: side };
+    renderBanner(flash);
+  }
 
   // ---- Web Worker (hesap arayüzü dondurmasın) ----
   var ENGINE_SRC = $('engine').textContent;
@@ -445,7 +578,7 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   }
   function currentAna() { return S.ana && S.ana.key === posKey() && S.ana.data ? S.ana.data : null; }
 
-  // ---- hamle açıklaması ----
+  // ---- hamle açıklaması (analiz paneli ve önizleme) ----
   function threatAfter(nb, opp) {
     var worst = 0, wp = -1;
     legal(nb, opp).forEach(function (m) {
@@ -482,7 +615,7 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   }
   function tagsHtml(tags) { return tags.map(function (t) { return '<span class="tag ' + t.k + '">' + esc(t.t) + '</span>'; }).join(''); }
 
-  // ---- çizim ----
+  // ---- tahta ----
   var pitEls = {};
   function buildBoard() {
     var top = $('rowTop'), bot = $('rowBot'), lt = $('labTop'), lb = $('labBot');
@@ -493,7 +626,7 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   function makePit(i) {
     var el = document.createElement('button');
     el.type = 'button'; el.className = 'pit'; el.id = 'p' + i;
-    el.innerHTML = '<div class="dots"></div><span class="count"></span>';
+    el.innerHTML = '<div class="stones"></div><span class="count"></span><span class="mark"></span>';
     el.addEventListener('click', function () { onPit(i); });
     el.addEventListener('pointerenter', function () { showPreview(i); });
     el.addEventListener('pointerleave', clearPreview);
@@ -502,10 +635,24 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
     pitEls[i] = el; return el;
   }
   function makeLab(i) { var el = document.createElement('div'); el.className = 'lab'; el.id = 'l' + i; return el; }
-  function dotsHtml(n, idx, max) {
-    var s = '', m = Math.min(n, max);
-    for (var k = 0; k < m; k++) s += '<i class="dot" style="--c:' + COLORS[(k * 3 + idx * 5) % COLORS.length] + '"></i>';
+  // Taşlar ikişer ikişer: her çift aynı renk ve bir kapsül içinde; tek kalan taş kesikli çerçeveli.
+  function stonesHtml(n, idx, isStore, isNew) {
+    var m = Math.min(n, isStore ? 48 : 36), pairs = Math.floor(m / 2), single = m % 2, s = '';
+    for (var j = 0; j < pairs; j++) {
+      var col = COLORS[(j * 3 + idx) % COLORS.length], nw = isNew && !single && j === pairs - 1;
+      s += '<span class="pair"><i class="st" style="--c:' + col + '"></i><i class="st' + (nw ? ' new' : '') + '" style="--c:' + col + '"></i></span>';
+    }
+    if (single) s += '<span class="pair single"><i class="st' + (isNew ? ' new' : '') + '" style="--c:' + COLORS[(pairs * 3 + idx) % COLORS.length] + '"></i></span>';
     return s;
+  }
+  // Kaç sütun çift ve taş boyu: az taşta büyük ve kare blok (4 taş = 2x2), çok taşta küçülür.
+  function stoneLayout(n, isStore) {
+    if (isStore) return { cols: 2, s: n <= 16 ? '14cqi' : n <= 32 ? '11cqi' : '9.5cqi' };
+    if (n <= 4) return { cols: 1, s: '20cqi' };
+    if (n <= 8) return { cols: 2, s: '15cqi' };
+    if (n <= 16) return { cols: 2, s: '12.5cqi' };
+    if (n <= 24) return { cols: 3, s: '10cqi' };
+    return { cols: 3, s: '8cqi' };
   }
   function isPlayable(i) {
     if (S.busy || S.over) return false;
@@ -518,25 +665,35 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   }
   function renderBoard(b, fx) {
     fx = fx || {};
-    var best = fx.anim ? [] : bestPits();
+    var anim = !!fx.anim, best = anim ? [] : bestPits();
+    var activeSide = anim && fx.side != null ? fx.side : (S.over ? -1 : S.turn);
+    $('rowBot').classList.toggle('act-a', activeSide === 0);
+    $('rowTop').classList.toggle('act-b', activeSide === 1);
+    var tr = !anim && S.trail ? S.trail : null;
     for (var i = 0; i < 14; i++) {
-      var el = pitEls[i], n = b[i];
-      if (i === 6 || i === 13) {
+      var el = pitEls[i], n = b[i], isStore = i === 6 || i === 13;
+      var st = el.querySelector('.stones');
+      st.innerHTML = stonesHtml(n, i, isStore, fx.drop === i);
+      var lay = stoneLayout(n, isStore);
+      st.style.setProperty('--s', lay.s); st.style.setProperty('--cols', lay.cols);
+      if (isStore) {
         el.querySelector('.num').textContent = n;
-        el.querySelector('.dots').innerHTML = dotsHtml(n, i, 24);
-        el.classList.toggle('active', !S.over && !fx.anim && S.turn === (i === 6 ? 0 : 1));
+        el.classList.toggle('active', activeSide === (i === 6 ? 0 : 1));
+        el.classList.toggle('glow', fx.glow === i);
       } else {
-        el.querySelector('.dots').innerHTML = dotsHtml(n, i, 14);
-        var c = el.querySelector('.count'); c.textContent = n; c.classList.toggle('zero', n === 0);
-        el.classList.toggle('playable', !fx.anim && isPlayable(i));
+        var c = el.querySelector('.count');
+        c.textContent = n; c.classList.toggle('zero', n === 0); c.classList.toggle('odd', n % 2 === 1);
+        c.classList.toggle('bump', fx.drop === i);
+        el.classList.toggle('playable', !anim && isPlayable(i));
         el.classList.toggle('best', best.indexOf(i) >= 0);
-        el.classList.toggle('src', fx.src === i);
+        el.dataset.pick = fx.pick === i ? (fx.side === 0 ? 'a' : 'b') : '';
+        el.dataset.from = tr && tr.from === i ? (tr.side === 0 ? 'a' : 'b') : '';
+        el.dataset.to = tr && tr.to === i ? (tr.side === 0 ? 'a' : 'b') : '';
         el.setAttribute('aria-label', (sideOf(i) === 0 ? who(0) : who(1)) + ' ' + pitNo(i) + '. kuyu, ' + n + ' taş');
         el.setAttribute('aria-disabled', isPlayable(i) ? 'false' : 'true');
       }
-      el.classList.toggle('flash', fx.flash === i);
       el.classList.toggle('cap', !!(fx.cap && fx.cap.indexOf(i) >= 0));
-      el.classList.toggle('land', !fx.anim && S.preview === i);
+      el.classList.toggle('land', !anim && S.preview === i);
     }
   }
   function renderLabels() {
@@ -552,23 +709,36 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
       $('l' + i).innerHTML = html;
     }
   }
+  function renderBanner(flash) {
+    var bn = $('banner');
+    bn.classList.remove('pa', 'pb');
+    if (S.banner.side === 0 || S.banner.side === 1) bn.classList.add(cls(S.banner.side));
+    $('btxt').innerHTML = S.banner.html || '';
+    if (flash) { bn.classList.remove('flash'); void bn.offsetWidth; bn.classList.add('flash'); }
+    $('btnReplay').hidden = !(isAI() && S.lastAi && !S.busy && !S.over && S.turn === 0);
+  }
   function renderStatus() {
-    var st = $('status'), txt, thinking = false;
+    var st = $('status'), tp = $('turn'), txt, side = S.turn, thinking = false;
     var last = S.log[S.log.length - 1];
-    if (S.over) txt = 'Oyun bitti';
-    else if (S.set.mode === 'ai' && S.turn === 1) { txt = 'Bilgisayar düşünüyor'; thinking = true; }
-    else if (S.busy) txt = 'Taşlar dağıtılıyor…';
-    else if (last && last.extra && last.side === S.turn) txt = (S.set.mode === 'ai' ? 'Ekstra hamle! Yine sen oynuyorsun.' : 'Ekstra hamle! Yine ' + who(S.turn) + ' oynuyor.');
-    else txt = S.set.mode === 'ai' ? 'Sıra sende: bir kuyu seç.' : 'Sıra: ' + who(S.turn) + ' oyuncu';
-    st.textContent = txt; st.classList.toggle('thinking', thinking);
-    $('score').innerHTML = esc(who(0)) + ' <b>' + S.b[6] + '</b> · <b>' + S.b[13] + '</b> ' + esc(who(1));
-    $('whoA').textContent = who(0); $('whoB').textContent = who(1);
+    if (S.replaying) { txt = 'Bilgisayarın hamlesi tekrar gösteriliyor'; side = 1; }
+    else if (S.over) { txt = 'Oyun bitti'; side = -1; }
+    else if (isAI() && S.turn === 1) { txt = 'Bilgisayar oynuyor'; thinking = true; }
+    else if (S.busy) txt = isAI() ? 'Taşların dağıtılıyor' : who(S.turn) + ' oyuncunun taşları dağıtılıyor';
+    else if (last && last.extra && last.side === S.turn) txt = isAI() ? 'Ekstra hamle: yine sen oynuyorsun' : 'Ekstra hamle: yine ' + who(S.turn).toLowerCase() + ' oyuncu';
+    else txt = isAI() ? 'Sıra sende: bir kuyu seç' : 'Sıra: ' + who(S.turn) + ' oyuncu';
+    st.textContent = txt;
+    tp.classList.remove('pa', 'pb', 'thinking');
+    if (side === 0 || side === 1) tp.classList.add(cls(side));
+    if (thinking) tp.classList.add('thinking');
+    $('score').innerHTML = '<span class="chip"><i class="pa"></i>' + esc(who(0)) + '</span><b>' + S.b[6] + '</b><span>–</span><b>' + S.b[13] + '</b><span class="chip"><i class="pb"></i>' + esc(who(1)) + '</span>';
+    $('whoA').textContent = who(0); $('whoB').textContent = who(1); $('lgB').textContent = who(1);
     $('btnUndo').disabled = S.history.length === 0;
   }
   function renderPanel() {
     var box = $('ana'), sub = $('anaSub');
     if (S.over) { box.innerHTML = '<p class="empty">Oyun bitti. Yeni oyun başlat ya da geri alıp farklı bir hamle dene.</p>'; sub.textContent = ''; return; }
-    if (!humanControls(S.turn)) { box.innerHTML = '<p class="empty">Bilgisayarın sırası.</p>'; return; }
+    if (S.replaying) { box.innerHTML = '<p class="empty">Bilgisayarın hamlesi tekrar gösteriliyor…</p>'; return; }
+    if (!humanControls(S.turn)) { box.innerHTML = '<p class="empty">Bilgisayarın sırası. Hamlesini tahtada izle.</p>'; return; }
     if (S.busy) { box.innerHTML = '<p class="empty">Hamle oynanıyor…</p>'; return; }
     var d = currentAna();
     if (!hintsVisible()) {
@@ -597,12 +767,12 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
   function renderFeedback() {
     var box = $('fb');
     if (S.over) {
-      var me = S.b[6], op = S.b[13], st = S.stats, title, cls;
-      if (S.set.mode === 'ai') { title = me > op ? 'Kazandın!' : me < op ? 'Kaybettin' : 'Berabere'; cls = me > op ? 'best' : me < op ? 'bad' : 'warn'; }
-      else { title = me > op ? 'Alt oyuncu kazandı' : me < op ? 'Üst oyuncu kazandı' : 'Berabere'; cls = 'ok'; }
+      var me = S.b[6], op = S.b[13], st = S.stats, title, c;
+      if (isAI()) { title = me > op ? 'Kazandın!' : me < op ? 'Kaybettin' : 'Berabere'; c = me > op ? 'best' : me < op ? 'bad' : 'warn'; }
+      else { title = me > op ? 'Alt oyuncu kazandı' : me < op ? 'Üst oyuncu kazandı' : 'Berabere'; c = 'ok'; }
       var acc = st.n ? Math.round(100 * st.best / st.n) : 0;
       var tip = st.n === 0 ? '' : acc >= 75 ? 'Çok iyi. Şimdi "Hamleden önce puanları göster"i kapatıp sadece hamle sonrası geri bildirimle oyna.' : 'Puanlar açıkken bir oyun daha oyna; ekstra hamle ve çift kuralı fırsatlarına dikkat et.';
-      box.innerHTML = '<div class="fb ' + cls + '"><div class="g">' + title + ' ' + me + ' – ' + op + '</div>' +
+      box.innerHTML = '<div class="fb ' + c + '"><div class="g">' + title + ' ' + me + ' – ' + op + '</div>' +
         (st.worst && st.worst.loss > 0 ? '<p>En büyük hata: ' + st.worst.n + '. hamle, ' + st.worst.pit + '. kuyu (−' + st.worst.loss + ' taş).</p>' : '') +
         (tip ? '<p>' + tip + '</p>' : '') + '</div>' +
         '<div class="stats"><div class="stat"><b>' + st.n + '</b><span>hamlen</span></div><div class="stat"><b>%' + acc + '</b><span>en iyi hamle</span></div><div class="stat"><b>' + st.loss + '</b><span>toplam kayıp taş</span></div></div>' +
@@ -611,13 +781,10 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
       return;
     }
     var f = S.feedback;
-    if (!f) {
-      box.innerHTML = '<p class="empty">Hamleni yap. Burada kaç taş kaybettiğini ve en iyi hamlenin hangisi olduğunu göreceksin.</p>';
-      return;
-    }
+    if (!f) { box.innerHTML = '<p class="empty">Hamleni yap. Burada kaç taş kaybettiğini ve en iyi hamlenin hangisi olduğunu göreceksin.</p>'; return; }
     var html = '<div class="fb ' + f.grade + '"><div class="g">' + GRADE_NAME[f.grade] + (f.loss > 0 ? ' (−' + f.loss + ' taş)' : '') + '</div>';
     if (f.loss > 0) {
-      html += '<p>' + (S.set.mode === 'ai' ? f.pitNo + '. kuyuyu oynadın.' : who(f.side) + ' oyuncu ' + f.pitNo + '. kuyuyu oynadı.') + ' En iyisi <b>' + f.bestNo + '. kuyu</b> idi.</p>' +
+      html += '<p>' + (isAI() ? f.pitNo + '. kuyuyu oynadın.' : who(f.side) + ' oyuncu ' + f.pitNo + '. kuyuyu oynadı.') + ' En iyisi <b>' + f.bestNo + '. kuyu</b> idi.</p>' +
         '<div class="tags" style="margin-top:8px">' + tagsHtml(f.bestTags) + '</div>' +
         '<p class="note">Senin hamlen: </p><div class="tags">' + tagsHtml(f.myTags) + '</div>';
     } else {
@@ -638,10 +805,10 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
       if (e.sweep && e.sweep.type === 'meb' && e.sweep.amount > 0) parts.push('oyun bitti, ' + who(e.sweep.to) + ' kalan ' + e.sweep.amount + ' taşı aldı');
       else if (e.over) parts.push('oyun bitti');
       var lv = e.grade ? '<span class="lv ' + e.grade + '">' + (e.loss === 0 ? 'en iyi' : '−' + e.loss) + '</span>' : '';
-      return '<li><span class="n">' + e.n + '</span><span class="txt"><span class="who">' + esc(who(e.side)) + ':</span> ' + esc(parts.join(' · ')) + '</span>' + lv + '</li>';
+      return '<li><span class="n">' + e.n + '</span><span class="d ' + cls(e.side) + '"></span><span class="txt"><span class="who">' + esc(who(e.side)) + ':</span> ' + esc(parts.join(' · ')) + '</span>' + lv + '</li>';
     }).join('');
   }
-  function render() { renderBoard(S.b); renderLabels(); renderStatus(); renderPanel(); renderFeedback(); renderLog(); }
+  function render() { renderBoard(S.b); renderLabels(); renderStatus(); renderBanner(); renderPanel(); renderFeedback(); renderLog(); }
 
   // ---- önizleme (fareyle kuyunun üstüne gelince) ----
   function showPreview(i) {
@@ -655,53 +822,147 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
     if (S.preview === null) return;
     S.preview = null; $('preview').textContent = defaultPreview(); renderBoard(S.b);
   }
-  function defaultPreview() {
-    if (S.lastAi && S.set.mode === 'ai' && !S.over) return 'Bilgisayarın son hamlesi: ' + S.lastAi + '. Bir kuyunun üstüne gel: son taşının nereye düşeceğini gösteririm.';
-    return 'Bir kuyunun üstüne gel: son taşın nereye düşeceğini gösteririm.';
+  function defaultPreview() { return 'Bir kuyunun üstüne gel: son taşın nereye düşeceğini kesikli beyaz halkayla gösteririm.'; }
+
+  // ---- efektler: el, uçan taşlar, yüzen yazılar ----
+  var fxLayer = $('fx'), hand = null;
+  function centerOf(idx) {
+    var r = pitEls[idx].getBoundingClientRect(), o = fxLayer.getBoundingClientRect();
+    return { x: r.left + r.width / 2 - o.left, y: r.top + r.height / 2 - o.top, w: r.width, h: r.height };
   }
-  function moveText(e) {
-    var parts = [e.pitNo + '. kuyu'];
-    if (e.extra) parts.push('tekrar oynadı');
-    if (e.cap) parts.push(e.cap.amount + ' taş aldı');
-    return parts.join(', ');
+  function handPos(idx) {
+    var c = centerOf(idx);
+    var y = (idx === 6 || idx === 13) ? c.y : c.y - c.h * 0.5;
+    return 'translate(' + c.x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+  }
+  function handShow(idx, n, p) {
+    hand = document.createElement('div');
+    hand.className = 'hand ' + cls(p);
+    hand.innerHTML = '<span>' + n + '</span>';
+    hand.style.transitionDuration = '0ms';
+    hand.style.transform = handPos(idx);
+    fxLayer.appendChild(hand);
+  }
+  function handMove(idx, ms) { if (!hand) return; hand.style.transitionDuration = ms + 'ms'; hand.style.transform = handPos(idx); }
+  function handCount(n) { if (hand) hand.firstChild.textContent = n; }
+  function cleanupFx() { fxLayer.innerHTML = ''; hand = null; }
+  function floatText(idx, text, kind) {
+    var c = centerOf(idx), d = document.createElement('div');
+    d.className = 'floater ' + kind; d.textContent = text;
+    d.style.left = c.x + 'px'; d.style.top = (c.y - ((idx === 6 || idx === 13) ? 0 : c.h * 0.15)) + 'px';
+    fxLayer.appendChild(d);
+    setTimeout(function () { d.remove(); }, 1500);
+  }
+  function jit() { return (Math.random() - 0.5) * 14; }
+  function flyStones(fromPits, shown, toIdx) {
+    return new Promise(function (res) {
+      var dest = centerOf(toIdx), made = [], k = 0;
+      fromPits.forEach(function (pi) {
+        var cnt = shown[pi]; if (!cnt) return;
+        var c = centerOf(pi), m = Math.min(cnt, 12);
+        for (var q = 0; q < m; q++) {
+          var f = document.createElement('i');
+          f.className = 'fly'; f.style.setProperty('--c', COLORS[(q * 3 + pi) % COLORS.length]);
+          f.style.transform = 'translate(' + (c.x + jit()) + 'px,' + (c.y + jit()) + 'px)';
+          fxLayer.appendChild(f); made.push({ f: f, delay: k * 40 }); k++;
+        }
+        shown[pi] = 0;
+      });
+      if (!made.length) { res(); return; }
+      requestAnimationFrame(function () { requestAnimationFrame(function () {
+        made.forEach(function (m) { m.f.style.transitionDelay = m.delay + 'ms'; m.f.style.transform = 'translate(' + (dest.x + jit()) + 'px,' + (dest.y + jit() * 2) + 'px)'; });
+      }); });
+      setTimeout(function () { made.forEach(function (m) { m.f.remove(); }); res(); }, 680 + k * 40);
+    });
+  }
+  function speedFor(p, force) {
+    var s = SPEEDS[S.set.anim];
+    if (!s) { if (!force) return null; s = SPEEDS.normal; }
+    return (isAI() && p === 1) ? s.ai : s.hu;
+  }
+
+  // Bir hamleyi adım adım gösterir: kuyuyu seçme → el taşları tek tek bırakır → sonuç (tekrar / alma / tek sayı).
+  async function animateMove(before, p, i, r, g, force) {
+    var T = speedFor(p, force); if (!T) return;
+    var shown = before.slice(), store = storeOf(p);
+    setBanner(narratePick(p, i, before[i]), p, true);
+    renderBoard(shown, { anim: true, side: p, pick: i });
+    await sleep(T.pick); if (g !== S.gen) return cleanupFx();
+    shown[i] = 0;
+    handShow(i, before[i], p);
+    renderBoard(shown, { anim: true, side: p, pick: i });
+    await sleep(Math.max(120, T.drop)); if (g !== S.gen) return cleanupFx();
+    var left = before[i];
+    for (var k = 0; k < r.path.length; k++) {
+      var pos = r.path[k];
+      if (!(k === 0 && pos === i)) { handMove(pos, T.move); await sleep(T.move); if (g !== S.gen) return cleanupFx(); }
+      shown[pos]++; left--; handCount(left);
+      renderBoard(shown, { anim: true, side: p, drop: pos });
+      await sleep(T.drop); if (g !== S.gen) return cleanupFx();
+    }
+    if (hand) { hand.remove(); hand = null; }
+    var res = narrateResult(p, i, r);
+    if (r.extra) {
+      setBanner(res, p, true);
+      renderBoard(shown, { anim: true, side: p, glow: store });
+      floatText(store, 'Tekrar!', 'gold');
+      await sleep(T.result); if (g !== S.gen) return cleanupFx();
+    } else if (r.cap) {
+      setBanner(res, p, true);
+      renderBoard(shown, { anim: true, side: p, cap: r.cap.pits });
+      floatText(r.last, r.cap.type === 'even' ? 'Çift: ' + r.cap.amount : 'Boş kuyu!', 'cap');
+      await sleep(T.result * 0.75); if (g !== S.gen) return cleanupFx();
+      await flyStones(r.cap.pits, shown, store); if (g !== S.gen) return cleanupFx();
+      shown[store] += r.cap.amount;
+      renderBoard(shown, { anim: true, side: p, glow: store });
+      floatText(store, '+' + r.cap.amount, cls(p));
+      await sleep(T.result * 0.8); if (g !== S.gen) return cleanupFx();
+    } else {
+      setBanner(res, p, true);
+      renderBoard(shown, { anim: true, side: p });
+      if (sideOf(r.last) === 1 - p && !r.over) floatText(r.last, r.b[r.last] + ': tek', 'neu');
+      await sleep(T.result * 0.7); if (g !== S.gen) return cleanupFx();
+    }
+    if (r.sweep) {
+      if (r.sweep.type === 'meb' && r.sweep.amount > 0) {
+        var to = storeOf(r.sweep.to), lo = r.sweep.to === 0 ? 7 : 0, from = [];
+        for (var q = lo; q < lo + 6; q++) if (shown[q] > 0) from.push(q);
+        await flyStones(from, shown, to); if (g !== S.gen) return cleanupFx();
+        shown[to] += r.sweep.amount;
+        renderBoard(shown, { anim: true, side: p, glow: to });
+        floatText(to, '+' + r.sweep.amount, cls(r.sweep.to));
+        await sleep(T.result); if (g !== S.gen) return cleanupFx();
+      } else if (r.sweep.type === 'own') {
+        var fa = [], fb = [];
+        for (var z = 0; z < 6; z++) if (shown[z] > 0) fa.push(z);
+        for (var y = 7; y < 13; y++) if (shown[y] > 0) fb.push(y);
+        await Promise.all([flyStones(fa, shown, 6), flyStones(fb, shown, 13)]); if (g !== S.gen) return cleanupFx();
+        await sleep(T.result * 0.5);
+      }
+    }
   }
 
   // ---- oyun akışı ----
-  async function animate(before, p, i, r, g) {
-    var d = ANIM[S.set.anim]; if (!d) return;
-    var shown = before.slice(); shown[i] = 0;
-    renderBoard(shown, { anim: true, src: i });
-    for (var k = 0; k < r.path.length; k++) {
-      await sleep(d); if (g !== S.gen) return;
-      shown[r.path[k]]++; renderBoard(shown, { anim: true, flash: r.path[k] });
-    }
-    if (r.cap || r.sweep) {
-      await sleep(d * 2); if (g !== S.gen) return;
-      var capPits = r.cap ? r.cap.pits.slice() : [];
-      if (r.sweep) for (var q = 0; q < 14; q++) if (q !== 6 && q !== 13 && shown[q] > 0) capPits.push(q);
-      capPits.push(p === 0 ? 6 : 13);
-      renderBoard(shown, { anim: true, cap: capPits });
-      await sleep(d * 3.5);
-    }
-  }
   async function playMove(i, p, g, anaPromise) {
     var before = S.b.slice();
     var r = sow(before, p, i, S.set.rule, true);
-    S.preview = null; $('preview').textContent = defaultPreview();
-    renderStatus(); renderPanel(); renderLabels();
-    await animate(before, p, i, r, g); if (g !== S.gen) return;
+    S.preview = null; S.trail = null; $('preview').textContent = defaultPreview();
+    if (!humanControls(p)) { if (!S.aiRec || S.aiRec.closed) S.aiRec = { start: before, moves: [], closed: false }; S.aiRec.moves.push(i); }
+    renderStatus(); renderPanel(); renderLabels(); renderBanner();
+    await animateMove(before, p, i, r, g, false); if (g !== S.gen) return;
     S.b = r.b;
+    S.trail = { from: i, to: r.over ? -1 : r.last, side: p };
+    setBanner(narrateResult(p, i, r), p);
     var e = { n: S.log.length + 1, side: p, pit: i, pitNo: pitNo(i), extra: r.extra, cap: r.cap, sweep: r.sweep, over: r.over };
     if (anaPromise) {
-      renderBoard(S.b, { anim: true });
+      renderBoard(S.b, { anim: true, side: p });
       var ana = await anaPromise; if (g !== S.gen) return;
       if (ana && ana.values) gradeMove(e, ana, before, p, i);
     }
     S.log.push(e);
-    if (!humanControls(p)) S.lastAi = moveText(e);
     if (r.over) S.over = true; else if (!r.extra) S.turn = 1 - p;
+    if (!humanControls(p) && (r.over || !r.extra)) { S.aiRec.closed = true; S.lastAi = S.aiRec; }
     S.busy = false;
-    $('preview').textContent = defaultPreview();
     nextTurn();
   }
   function gradeMove(e, ana, before, p, i) {
@@ -719,36 +980,56 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
     var t0 = Date.now(), L = LEVELS[S.set.level] || LEVELS.zor;
     var d = await requestAnalysis(S.b, 1, { timeMs: L.timeMs, maxDepth: L.maxDepth, minDepth: Math.min(L.maxDepth, 4) });
     if (g !== S.gen) return;
-    var wait = 500 - (Date.now() - t0); if (wait > 0) { await sleep(wait); if (g !== S.gen) return; }
+    var wait = 450 - (Date.now() - t0); if (wait > 0) { await sleep(wait); if (g !== S.gen) return; }
     var vals = d && d.values && d.values.length ? d.values : legal(S.b, 1).map(function (k) { return { pit: k, v: 0 }; });
     await playMove(L.pick(vals), 1, g, null);
+  }
+  async function replayAi() {
+    var rec = S.lastAi; if (!rec || S.busy || S.over) return;
+    var g = S.gen, savedTrail = S.trail, savedBanner = S.banner;
+    S.busy = true; S.replaying = true; S.trail = null; S.preview = null;
+    renderStatus(); renderPanel(); renderLabels(); renderBanner();
+    var b = rec.start.slice();
+    for (var k = 0; k < rec.moves.length; k++) {
+      var i = rec.moves[k], r = sow(b, 1, i, S.set.rule, true);
+      await animateMove(b, 1, i, r, g, true); if (g !== S.gen) return;
+      b = r.b;
+      if (k < rec.moves.length - 1) { renderBoard(b, { anim: true, side: 1 }); await sleep(250); if (g !== S.gen) return; }
+    }
+    S.busy = false; S.replaying = false; S.trail = savedTrail; S.banner = savedBanner;
+    render();
   }
   function nextTurn() {
     render();
     if (S.over) return;
-    if (S.set.mode === 'ai' && S.turn === 1) { aiTurn(); return; }
+    if (isAI() && S.turn === 1) { aiTurn(); return; }
     ensureAnalysis();
   }
   function onPit(i) {
     if (!isPlayable(i)) return;
-    S.history.push({ b: S.b.slice(), turn: S.turn, over: S.over, logLen: S.log.length, stats: Object.assign({}, S.stats), feedback: S.feedback });
+    S.history.push({ b: S.b.slice(), turn: S.turn, over: S.over, logLen: S.log.length, stats: Object.assign({}, S.stats), feedback: S.feedback,
+                     trail: S.trail, lastAi: S.lastAi, aiRec: S.aiRec, banner: S.banner });
     S.busy = true;
     var anaP = ensureAnalysis();
     playMove(i, S.turn, S.gen, anaP);
   }
   function newGame() {
-    S.gen++; resetWorker();
-    S.b = START.slice(); S.over = false; S.busy = false; S.history = []; S.log = []; S.stats = freshStats(); S.feedback = null; S.ana = null; S.reveal = null; S.preview = null; S.lastAi = null;
-    S.turn = (S.set.mode === 'ai' && S.set.starter === 'ai') ? 1 : 0;
+    S.gen++; resetWorker(); cleanupFx();
+    S.b = START.slice(); S.over = false; S.busy = false; S.replaying = false; S.history = []; S.log = []; S.stats = freshStats(); S.feedback = null;
+    S.ana = null; S.reveal = null; S.preview = null; S.trail = null; S.aiRec = null; S.lastAi = null;
+    S.turn = (isAI() && S.set.starter === 'ai') ? 1 : 0;
+    S.banner = { html: isAI() ? (S.turn === 0 ? 'Yeni oyun. İlk hamle senin: alttaki kuyulardan birine tıkla.' : 'Yeni oyun. İlk hamleyi bilgisayar yapıyor, tahtadan izle.') : 'Analiz modu: iki tarafı da sen oynuyorsun.', side: -1 };
     $('preview').textContent = defaultPreview();
     nextTurn();
   }
   function undo() {
     if (!S.history.length) return;
     var s = S.history.pop();
-    S.gen++; resetWorker();
+    S.gen++; resetWorker(); cleanupFx();
     S.b = s.b; S.turn = s.turn; S.over = s.over; S.log.length = s.logLen; S.stats = s.stats; S.feedback = s.feedback;
-    S.busy = false; S.ana = null; S.preview = null; S.lastAi = null;
+    S.trail = s.trail; S.lastAi = s.lastAi; S.aiRec = s.aiRec;
+    S.busy = false; S.replaying = false; S.ana = null; S.preview = null;
+    S.banner = { html: 'Son hamlen geri alındı. Başka bir kuyu dene.', side: -1 };
     $('preview').textContent = defaultPreview();
     nextTurn();
   }
@@ -758,16 +1039,17 @@ function analyze(b, p, rule, timeMs, maxDepth, minDepth) {
     var el = $(id); el.value = S.set[key];
     el.addEventListener('change', function () { S.set[key] = el.value; saveSet(); if (onChange) onChange(); });
   }
-  bindSelect('setMode', 'mode', function () { $('setStarter').disabled = S.set.mode !== 'ai'; $('setLevel').disabled = S.set.mode !== 'ai'; newGame(); });
+  bindSelect('setMode', 'mode', function () { $('setStarter').disabled = !isAI(); $('setLevel').disabled = !isAI(); newGame(); });
   bindSelect('setStarter', 'starter', newGame);
   bindSelect('setLevel', 'level', null);
   bindSelect('setAnim', 'anim', null);
   bindSelect('setRule', 'rule', newGame);
-  $('setStarter').disabled = S.set.mode !== 'ai'; $('setLevel').disabled = S.set.mode !== 'ai';
+  $('setStarter').disabled = !isAI(); $('setLevel').disabled = !isAI();
   var hk = $('setHints'); hk.checked = !!S.set.hints;
   hk.addEventListener('change', function () { S.set.hints = hk.checked; saveSet(); render(); });
   $('btnNew').addEventListener('click', newGame);
   $('btnUndo').addEventListener('click', undo);
+  $('btnReplay').addEventListener('click', replayAi);
 
   buildBoard();
   newGame();
